@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart - Clothing Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="loadCart(); setInterval(loadCart, 3000)">
+<div class="container">
+    <div class="topbar">
+        <h1>Shopping Cart</h1>
+        <div>
+            <a class="button secondary" href="products.html">Back to Products</a>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Product</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="cartBody"></tbody>
+    </table>
+
+    <h3 id="cartTotal">Total: 0</h3>
+
+    <button onclick="placeOrder()">Place Order</button>
+
+    <h2>My Orders</h2>
+    <div id="orders"></div>
+
+    <p id="message" class="message"></p>
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

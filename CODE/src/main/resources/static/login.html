@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Clothing Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container small">
+    <h1>Login</h1>
+
+    <label>Username</label>
+    <input id="username" type="text" placeholder="admin or consumer">
+
+    <label>Password</label>
+    <input id="password" type="password" placeholder="admin or consumer">
+
+    <button onclick="login()">Login</button>
+
+    <p class="hint">
+        Test accounts:<br>
+        admin / 123<br>
+        consumer{n} / 123
+    </p>
+
+    <p id="message" class="message"></p>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>
